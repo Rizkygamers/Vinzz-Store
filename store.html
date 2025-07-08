@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vinzz Store</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Outfit", sans-serif;
+            }
+
+            body {
+                min-height: 100vh;
+                padding: 20px;
+                background: #0f2027;
+                background: linear-gradient(
+                    to right,
+                    #2c5364,
+                    #203a43,
+                    #0f2027
+                );
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                color: white;
+                overflow-x: hidden;
+            }
+
+            body::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                opacity: 0.08;
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 25px;
+                font-size: 2rem;
+                color: #ffffff;
+                text-shadow: 0 0 10px #00f0ff;
+                position: relative;
+                z-index: 1;
+            }
+
+            .card {
+                background: rgba(0, 0, 0, 0.5);
+                border: 1px solid rgba(0, 255, 255, 0.1);
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+                border-radius: 16px;
+                padding: 20px;
+                margin-bottom: 20px;
+                backdrop-filter: blur(10px);
+                position: relative;
+                z-index: 1;
+            }
+
+            .card h2 {
+                color: #00ffe5;
+                font-size: 1.3rem;
+                margin-bottom: 8px;
+                text-shadow: 0 0 5px #00fff288;
+            }
+
+            .card p {
+                font-size: 0.99rem;
+                line-height: 1.5;
+                color: #e0f7ff;
+            }
+
+            .card button {
+                margin-top: 15px;
+                padding: 10px 25px;
+                border: none;
+                background: #00ffe5;
+                color: #000;
+                border-radius: 25px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s;
+                box-shadow: 0 0 5px #00ffe588;
+            }
+
+            .card button:hover {
+                background: #00e6cc;
+                box-shadow: 0 0 7px #00ffe5cc;
+            }
+
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px 0;
+                color: #ccc;
+                font-size: 0.9rem;
+                position: relative;
+                z-index: 1;
+                margin-top: 30px;
+                background: rgba(255, 255, 255, 0.05);
+                border-top: 1px solid rgba(0, 255, 255, 0.1);
+                backdrop-filter: blur(8px);
+                box-shadow: 0 -2px 10px rgba(0, 255, 255, 0.1);
+                border-radius: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <h1>Vinzz Store</h1>
+
+        <div class="card" data-aos="fade-up">
+            <h2>Topup Robux</h2>
+            <p><strong>Roblox</strong></p>
+            <p>
+                Top up Robux cepat, aman, dan terpercaya langsung dari Vinzz
+                Store.
+            </p>
+            <button onclick="window.open('robux.html')">Lihat</button>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+            <h2>Jasa Rekber</h2>
+            <p><strong>Rekber Aman</strong></p>
+            <p>
+                Layanan rekening bersama untuk transaksi agar lebih aman dan
+                nyaman.
+            </p>
+            <button
+                onclick="window.open('https://wa.me/6281280085462?text=Halo%20Kak%20saya%20mau%20Rekber%20bisa%20ga%20ya%3F', '_blank')"
+            >
+                Lihat
+            </button>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+            <h2>Jasa Buat Logo</h2>
+            <p><strong>Logo</strong></p>
+            <p>
+                Bikin logo profesional buat brand kamu, cocok buat bisnis, tim
+                esport, dll.
+            </p>
+            <button onclick="window.open('logo.html')">Lihat</button>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+            <h2>Akun Mobile Legends, Free Fire, Roblox</h2>
+            <p><strong>Akun Game</strong></p>
+            <p>
+                Jual beli akun game terpercaya, ready akun MLBB, FF, dan Roblox
+                dengan harga bersahabat.
+            </p>
+            <button onclick="window.open('akun.html')">Lihat</button>
+        </div>
+
+        <footer>&copy; 2025 Vinzz Store. All rights reserved.</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS("particles-js", {
+                particles: {
+                    number: {
+                        value: 60,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: { value: "#ffffff" },
+                    shape: { type: "circle" },
+                    opacity: {
+                        value: 0.3,
+                        random: true
+                    },
+                    size: {
+                        value: 3,
+                        random: true
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: "#ffffff",
+                        opacity: 0.2,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: "none",
+                        out_mode: "bounce"
+                    }
+                },
+                interactivity: {
+                    events: {
+                        onhover: { enable: true, mode: "repulse" },
+                        onclick: { enable: true, mode: "push" }
+                    },
+                    modes: {
+                        repulse: { distance: 100 },
+                        push: { particles_nb: 4 }
+                    }
+                },
+                retina_detect: true
+            });
+        </script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        </script>
+    </body>
+</html>

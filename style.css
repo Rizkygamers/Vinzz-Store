@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #0f2027; /* fallback */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+/* Partikel background */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+.content:hover {
+  transform: translateY(-5px);
+}
+
+.content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00fff7;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00fff7;
+  }
+  to {
+    text-shadow: 0 0 20px #00fff7, 0 0 30px #00fff7;
+  }
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+button {
+  background: #00b894;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 255, 185, 0.3);
+}
+
+button:hover {
+  background: #00cec9;
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(0, 255, 185, 0.6);
+}
